@@ -108,4 +108,13 @@ public class BGraph {
 
         return featureMap;
     }
+
+    public Node getNodeByNodeID(int nodeID) {
+        for(Node node: this.nodeList) {
+            if(node.nodeId == nodeID) {
+                return node;
+            }
+        }
+        return null;
+    }
 }
