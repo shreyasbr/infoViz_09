@@ -15,4 +15,9 @@ public class Edge {
         this.to = to;
         this.weight = weight;
     }
+
+    @Override
+    public String toString() {
+        return from + "->" + to + ":" + weight;
+    }
 }
